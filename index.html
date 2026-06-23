@@ -33,17 +33,30 @@
   <!-- ── Hero ─────────────────────────────────────────── -->
   <section class="hero">
     <div class="container">
-      <div class="hero-label">Director of Product · B2B SaaS · Greater Toronto Area</div>
-      <h1>I build products that earn their place <em>twice</em> — for the customer first, then for the business.</h1>
-      <p class="hero-sub">
-        10+ years in high-stakes B2B SaaS: cybersecurity, digital forensics, and fintech.
-        Full P&amp;L ownership. Multi-tier product architecture. AI built into how I work and what I ship.
-      </p>
-      <div class="hero-actions">
-        <a href="work.html" class="btn btn-primary">See my work</a>
-        <a href="https://www.linkedin.com/in/gwendarling" target="_blank" rel="noopener" class="btn btn-ghost">LinkedIn</a>
-        <a href="downloads/incident360-retainer.pdf" target="_blank" class="btn btn-ghost">Incident360 Data Sheet ↗</a>
+      <div style="display: grid; grid-template-columns: 1fr 280px; gap: 64px; align-items: start;">
+        <div>
+          <div class="hero-label">Director of Product · B2B SaaS · Greater Toronto Area</div>
+          <h1>I build products that earn their place <em>twice</em> — for the customer first, then for the business.</h1>
+          <p class="hero-sub">
+            10+ years in high-stakes B2B SaaS: cybersecurity, digital forensics, and fintech.
+            Full P&amp;L ownership. Multi-tier product architecture. AI built into how I work and what I ship.
+          </p>
+          <div class="hero-actions">
+            <a href="work.html" class="btn btn-primary">See my work</a>
+            <a href="https://www.linkedin.com/in/gwendarling" target="_blank" rel="noopener" class="btn btn-ghost">LinkedIn</a>
+            <a href="downloads/incident360-retainer.pdf" target="_blank" class="btn btn-ghost">Incident360 Data Sheet ↗</a>
+          </div>
+        </div>
+        <div style="border-radius: 16px; overflow: hidden; border: 1px solid var(--border); aspect-ratio: 3/4; margin-top: 8px;">
+          <img src="images/gwen-headshot.jpg" alt="Gwen Darling" style="width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block;">
+        </div>
       </div>
+      <style>
+        @media (max-width: 720px) {
+          .hero .container > div[style*="grid"] { grid-template-columns: 1fr !important; }
+          .hero .container > div[style*="grid"] > div:last-child { display: none; }
+        }
+      </style>
 
       <div class="metrics">
         <div class="metric">
