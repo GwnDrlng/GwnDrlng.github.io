@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Outrider — Gwen Darling</title>
+  <meta name="description" content="How I built Magnet Forensics' triage tool, shipped a patent-pending detection algorithm, and then made the call to stop scaling it as a standalone product.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+</head>
+<body>
+
+<nav>
+  <div class="container">
+    <a href="/" class="nav-logo">Gwen Darling</a>
+    <div class="nav-links">
+      <a href="/work.html">Work</a>
+      <a href="/thinking.html">Thinking</a>
+      <a href="/about.html">About</a>
+      <a href="mailto:gwenyvere.tl.darling@gmail.com" class="nav-cta">Get in touch</a>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<main>
+
+  <div class="cs-hero">
+    <div class="container">
+      <div class="cs-breadcrumb">
+        <a href="/work.html">← Work</a>
+        <span>/</span>
+        <span>Outrider</span>
+      </div>
+      <h1>From Weeks to Minutes — and Knowing When to Stop</h1>
+      <p class="lead">Magnet Outrider was built to compress forensic evidence discovery from weeks to minutes. We shipped a patent-pending detection algorithm, proved the concept, and then — when the market didn't materialize the way we expected — I made the call to fold it into AXIOM rather than keep scaling a standalone product the market wasn't ready to buy.</p>
+      <div class="cs-meta">
+        <div class="cs-meta-item">
+          <span class="label">Company</span>
+          <span class="value">Magnet Forensics</span>
+        </div>
+        <div class="cs-divider"></div>
+        <div class="cs-meta-item">
+          <span class="label">Role</span>
+          <span class="value">Senior Product Manager</span>
+        </div>
+        <div class="cs-divider"></div>
+        <div class="cs-meta-item">
+          <span class="label">Timeline</span>
+          <span class="value">Mar 2021 – Jan 2024</span>
+        </div>
+        <div class="cs-divider"></div>
+        <div class="cs-meta-item">
+          <span class="label">Domain</span>
+          <span class="value">Digital Forensics · B2G · AI/ML</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+      <div class="cs-body">
+
+        <article class="cs-content">
+
+          <h2>The problem</h2>
+          <p>Digital forensic investigators — law enforcement, government agencies, private sector DFIR teams — were working with evidence discovery processes that could take weeks. A device comes in, acquisition starts, and by the time an investigator surfaces the relevant material, time-sensitive investigations have lost their window.</p>
+          <p>Magnet's customer base was approximately 80% law enforcement and federal agencies (FBI, DEA, HSI and others). These users weren't working in a forgiving environment. Every day of evidence lag was a day an investigation stalled.</p>
+          <p>Triage was the answer — a fast-path tool that could surface the signal before full acquisition completed. The question was whether we could do it accurately enough that investigators would trust it in production.</p>
+
+          <h2>What I built</h2>
+          <p>Magnet Outrider was built as a purpose-built triage tool — mobile and desktop first — capable of rapid evidence discovery across iOS, Android, Windows, and macOS. The goal was to let an investigator run a device on-scene or in the lab and surface relevant material in minutes rather than waiting for full AXIOM processing.</p>
+
+          <h3>The patent-pending algorithm</h3>
+          <p>The most technically significant work was on CSAM origin detection. The challenge: when triage surfaces material, how do you reliably identify first-generation files to aid in victim identification without false positives that could compromise an investigation?</p>
+          <p>I served as named inventor on a patent-pending algorithm — <strong>P1280USP</strong> — designed to detect origin material in digital forensic investigations using hash-based matching against victim identification databases including VICS and CAID. The algorithm reduced the problem from a manual evidence-by-evidence review to an automated, audit-ready identification workflow.</p>
+
+          <div class="cs-callout">
+            <p>The algorithm used hashing and matching techniques against VICS and CAID databases to surface CSAM origin material in triage — reducing forensic evidence discovery from weeks to minutes for investigators worldwide.</p>
+            <span class="source"><a href="https://www.magnetforensics.com/blog/mag24-hashing-and-matching-for-triage-with-vics-and-caid-in-magnet-outrider/" target="_blank" rel="noopener">Magnet Forensics Blog — MAG24 feature documentation</a></span>
+          </div>
+
+          <h3>Forensic Cross-Case Analysis</h3>
+          <p>Beyond individual device triage, I shipped Forensic Cross-Case Analysis — a capability that let investigators surface connections across multiple cases and datasets. In an environment where organized crime and trafficking networks span many investigations, the ability to link material across cases without manual correlation was a meaningful operational upgrade.</p>
+
+          <div class="video-embed">
+            <iframe
+              src="https://www.youtube.com/embed/9Ieicen5j2g"
+              title="Magnet Outrider product overview"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              loading="lazy"
+            ></iframe>
+          </div>
+
+          <h2>What happened — the good part</h2>
+
+          <div class="outcomes-grid">
+            <div class="outcome-card">
+              <div class="outcome-value" style="font-size: 1.4rem;">Patent<br>Pending</div>
+              <div class="outcome-label">Named inventor — CSAM Origin Detection Algorithm (P1280USP)</div>
+            </div>
+            <div class="outcome-card">
+              <div class="outcome-value" style="font-size: 1.5rem;">Weeks → Minutes</div>
+              <div class="outcome-label">Forensic evidence discovery time — investigators worldwide</div>
+            </div>
+            <div class="outcome-card">
+              <div class="outcome-value">4</div>
+              <div class="outcome-label">OS platforms covered: iOS, Android, Windows, macOS</div>
+            </div>
+            <div class="outcome-card">
+              <div class="outcome-value">VICS + CAID</div>
+              <div class="outcome-label">Victim identification database integrations for hash matching</div>
+            </div>
+          </div>
+
+          <h2>The harder part — and the call I made</h2>
+          <p>Outrider proved the triage concept. It shipped, it worked, and investigators used it. But as a standalone paid product, it hit a structural problem: <strong>the government agencies who needed it most had access to free tools that covered much of the same ground, and their procurement budgets for a standalone triage SKU weren't there.</strong></p>
+          <p>That's not a product failure — it's a market reality. Law enforcement agencies operate within constrained procurement cycles and have strong incentives to use free tooling where it exists. A premium standalone product competing against free government-distributed tools, without a budget line to fund it, was going to lose the commercial argument regardless of technical quality.</p>
+          <p>At release 7.10, Outrider was moved to maintenance. Rather than keep investing in a standalone go-to-market that the market wasn't structured to support, the capabilities were integrated into the AXIOM license family — which immediately expanded reach to every AXIOM customer without adding a purchase decision.</p>
+
+          <div class="cs-callout green">
+            <p>Folding Outrider into AXIOM wasn't a failure to find product-market fit. It was a recognition that the fit existed — just not as a standalone product. The integration extended the technology's reach further than the standalone model ever could have.</p>
+          </div>
+
+          <h2>What I learned</h2>
+          <p>The Outrider arc is one of the most useful things I can point to when someone asks about product judgment. A lot of PMs can launch. Fewer can make a credible case for why the right move is to stop scaling something and integrate it instead.</p>
+          <p>The lesson: <strong>market existence and market willingness to pay are different questions.</strong> Investigators needed Outrider's capabilities. That's clear from adoption, from feedback, from the algorithm's technical validation. But "the market needs this" is not the same as "the market will pay for this as a standalone SKU in the current procurement environment." Those are separate hypotheses, and conflating them is how you burn resources defending a go-to-market strategy that the market has already voted against.</p>
+          <p>The kill decision is always the hardest PM decision. It's also the one that most clearly reveals judgment over process.</p>
+
+        </article>
+
+        <aside class="cs-sidebar">
+          <div class="sidebar-card">
+            <h4>Skills demonstrated</h4>
+            <ul>
+              <li>AI/ML product development</li>
+              <li>Patent invention and IP filing</li>
+              <li>B2G market strategy</li>
+              <li>Platform decision-making (standalone vs. integrate)</li>
+              <li>Cross-case forensic analysis design</li>
+              <li>Government procurement understanding</li>
+              <li>Kill/pivot decision with stakeholder alignment</li>
+            </ul>
+          </div>
+          <div class="sidebar-card">
+            <h4>Domain context</h4>
+            <ul>
+              <li>~80% law enforcement customers</li>
+              <li>FBI, DEA, HSI, international agencies</li>
+              <li>VICS and CAID database integrations</li>
+              <li>B2G procurement cycle constraints</li>
+            </ul>
+          </div>
+          <a href="https://www.magnetforensics.com/products/magnet-outrider/" class="sidebar-download" target="_blank" rel="noopener">
+            <span>↗</span> Outrider at Magnet Forensics
+          </a>
+          <a href="https://www.magnetforensics.com/blog/mag24-hashing-and-matching-for-triage-with-vics-and-caid-in-magnet-outrider/" class="sidebar-download" target="_blank" rel="noopener">
+            <span>↗</span> Patent feature blog post
+          </a>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <section style="border-top: 1px solid var(--border); padding: 48px 0;">
+    <div class="container">
+      <p class="text-dim" style="font-size: 0.82rem; margin-bottom: 8px;">NEXT CASE STUDY</p>
+      <a href="/manulife.html" style="font-family: var(--font-display); font-size: 1.3rem; font-weight: 600; color: var(--text-bright); letter-spacing: -0.02em;">
+        Manulife: Digitizing Group Retirement Enrolment at Scale →
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <span class="footer-copy">Gwen Darling — Director of Product · B2B SaaS · GTA, Canada</span>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/gwendarling" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="/work.html">Work</a>
+        <a href="/about.html">About</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
