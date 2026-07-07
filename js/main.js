@@ -10,6 +10,30 @@ if (toggle && navLinks) {
   });
 }
 
+// Scroll reveal: cards and widgets rise over the fixed backdrop
+const revealables = document.querySelectorAll(
+  '.card, .metric, .outcome-card, .thinking-item, .recognition-badge, .credential, .sidebar-card, .value-chip'
+);
+if ('IntersectionObserver' in window && revealables.length) {
+  const groups = new Map();
+  revealables.forEach(el => {
+    el.classList.add('reveal');
+    const parent = el.closest('.cards-grid, .metrics, .outcomes-grid, .thinking-grid, .recognition-strip, .credential-list, .values-grid, .cs-sidebar') || el.parentElement;
+    const idx = groups.get(parent) || 0;
+    el.style.setProperty('--reveal-delay', `${Math.min(idx, 5) * 70}ms`);
+    groups.set(parent, idx + 1);
+  });
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('in');
+        io.unobserve(e.target);
+      }
+    });
+  }, { rootMargin: '0px 0px -8% 0px', threshold: 0.05 });
+  revealables.forEach(el => io.observe(el));
+}
+
 // Mark active nav link with the overline indicator
 const page = (window.location.pathname.split('/').pop() || 'index.html');
 // Case studies live under Work
