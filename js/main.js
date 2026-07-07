@@ -10,11 +10,16 @@ if (toggle && navLinks) {
   });
 }
 
-// Mark active nav link
-const path = window.location.pathname.replace(/\/$/, '') || '/index.html';
-document.querySelectorAll('.nav-links a').forEach(a => {
-  const href = a.getAttribute('href').replace(/\/$/, '');
-  if (path === href || (href !== '/' && path.startsWith(href))) {
-    a.style.color = 'var(--text-bright)';
-  }
+// Mark active nav link with the overline indicator
+const page = (window.location.pathname.split('/').pop() || 'index.html');
+// Case studies live under Work
+const sectionMap = {
+  'incident360.html': 'work.html',
+  'outrider.html': 'work.html',
+  'manulife.html': 'work.html',
+  'ai-operations.html': 'work.html'
+};
+const target = sectionMap[page] || page;
+document.querySelectorAll('.nav-links a:not(.nav-cta)').forEach(a => {
+  if (a.getAttribute('href') === target) a.classList.add('active');
 });
