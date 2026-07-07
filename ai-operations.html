@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AI Operations · Gwen Darling</title>
-  <meta name="description" content="How Gwen Darling runs a product practice on AI: agentic systems for research, competitive analysis, and PRD workflows, with open-source systems on GitHub.">
+  <meta name="description" content="How Gwen Darling runs a product practice on AI, with agentic systems for research, competitive analysis, and PRD workflows, and open-source systems on GitHub.">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
 </head>
@@ -35,7 +35,7 @@
         <span>AI Operations</span>
       </div>
       <h1>Running a Product Practice on AI</h1>
-      <p class="lead">My product practice runs on agentic systems I design and build myself. The same systems ran inside Arctic Wolf's product organization, where I led AI adoption for PMs and designers, and several now live in the open on GitHub where anyone can read the architecture. AI earns its place in my work the same way it earns a place in a product: by closing a real gap, bounded by what a person can stand behind.</p>
+      <p class="lead">My product practice runs on agentic systems I design and build myself. The same systems ran inside Arctic Wolf's product organization, where I led AI adoption for PMs and designers, and several now live in the open on GitHub where anyone can read the architecture. AI earns its place in my work the same way it earns a place in a product, by closing a real gap and staying bounded by what a person can stand behind.</p>
       <div class="cs-meta">
         <div class="cs-meta-item">
           <span class="label">Context</span>
@@ -70,19 +70,21 @@
           <p>Four capabilities carry most of my product work.</p>
 
           <h3>Claude Code CLI and Copilot in VS Code</h3>
-          <p>This is the primary workflow: competitive analysis, PRD drafting, research synthesis, and documentation. At Arctic Wolf I built and ran a competitive analysis agent producing structured intelligence, positioning gaps, GTM overlaps, and response vectors, in a format that went directly into strategic planning decks and exec briefings. It compressed a week-long competitive research cycle into hours.</p>
+          <p>This is the primary workflow for competitive analysis, PRD drafting, research synthesis, and documentation. At Arctic Wolf I built and ran a competitive analysis agent producing structured intelligence, positioning gaps, GTM overlaps, and response vectors, in a format that went directly into strategic planning decks and exec briefings. It compressed a week-long competitive research cycle into hours.</p>
+          <p><a href="https://github.com/GwnDrlng/daily-sentiment-analysis" target="_blank" rel="noopener">See a public system in the same pattern, daily-sentiment-analysis on GitHub →</a></p>
 
           <h3>LLM-as-judge discovery workflows</h3>
           <p>AI runs through my discovery process end to end. Discussion guides get pressure-tested before fieldwork, question sets build from the tested plan, responses get evaluated against clear rubrics with evals and LLM-as-judge scoring, and transcripts get normalized for structured analysis. Discovery becomes repeatable instead of dependent on memory and note quality.</p>
+          <p><a href="https://github.com/GwnDrlng/research-engine" target="_blank" rel="noopener">See the public version of this system, research-engine on GitHub →</a></p>
 
           <h3>Template-driven PRD workflows</h3>
-          <p>Opinionated PRD templates with built-in prompts force the hard questions early: job-to-be-done, customer segment, success metric, known unknowns, and build-vs-buy framing. First-draft time dropped by roughly 60 to 70 percent, and the early-stage thinking improved because the hard questions became visible before anyone started writing solutions.</p>
+          <p>Opinionated PRD templates with built-in prompts force the hard questions early, from job-to-be-done and customer segment through success metric, known unknowns, and build-vs-buy framing. First-draft time dropped by roughly 60 to 70 percent, and the early-stage thinking improved because the hard questions became visible before anyone started writing solutions.</p>
 
           <h3>M365 Copilot as the accessible baseline</h3>
           <p>Meeting summaries, communication drafts, and research starting points. The goal was making AI the default starting point for documentation and communication across the whole team, power users and everyone else alike.</p>
 
           <h2>Enabling an organization, treated as a product problem</h2>
-          <p>The behaviorally hardest part was enabling PMs and designers, people with no prior reason to open a code editor, onto VS Code, Claude Code, and Copilot. The program treated adoption as a product problem with a value proposition, a planned learning curve, and friction removed before the change was asked for: clear onboarding, relevant use cases, a quick win in the first session, and a follow-up loop to catch where people got stuck.</p>
+          <p>The behaviorally hardest part was enabling PMs and designers, people with no prior reason to open a code editor, onto VS Code, Claude Code, and Copilot. The program treated adoption as a product problem with a value proposition, a planned learning curve, and friction removed before the change was asked for. That meant clear onboarding, relevant use cases, a quick win in the first session, and a follow-up loop to catch where people got stuck.</p>
 
           <div class="cs-callout">
             <p>The biggest barrier to internal AI adoption is giving people a reason to change how they work when what they currently do works fine. "Here's what AI can do" is a demo. "Here's how you would have solved that problem you mentioned last week, in under five minutes" is adoption.</p>
@@ -90,7 +92,7 @@
 
           <p>The teams that got most productive had the fewest training hours. They had a clear first use case, reached a working result fast, and built habit from there. That is activation design, and it works the same way internally as it does for customers.</p>
 
-          <h2>In the open: systems you can read</h2>
+          <h2>In the open, systems you can read</h2>
           <p>Several of my working systems live publicly on GitHub. Some rebuild, in the open, patterns I first created inside Arctic Wolf, where the originals remain.</p>
 
           <div class="cards-grid" style="margin-top: 32px;">
@@ -119,7 +121,7 @@
                 <div class="card-body">
                   <div class="card-tag green">Automation · Canadian Market</div>
                   <h3>career-ops-ca</h3>
-                  <p>AI-powered, CLI-agnostic career operations automation adapted for Canadian market specifics: ATS behaviour, French-language requirements, and provincial variation. Architecture splits across Vercel for scheduling, on-prem for deterministic and token-intensive work, and Slack for delivery.</p>
+                  <p>AI-powered, CLI-agnostic career operations automation adapted for Canadian market specifics such as ATS behaviour, French-language requirements, and provincial variation. Architecture splits across Vercel for scheduling, on-prem for deterministic and token-intensive work, and Slack for delivery.</p>
                   <span class="card-arrow">View on GitHub →</span>
                 </div>
               </div>
@@ -129,7 +131,7 @@
                 <div class="card-body">
                   <div class="card-tag">Content · Self-evaluation</div>
                   <h3>linkedin-carousel-agent</h3>
-                  <p>A Claude skill that creates LinkedIn carousels with self-evaluation and auto-retry built in. A small system, and a complete one: generation, judgment, and iteration in a single loop.</p>
+                  <p>A Claude skill that creates LinkedIn carousels with self-evaluation and auto-retry built in. A small system, and a complete one, with generation, judgment, and iteration in a single loop.</p>
                   <span class="card-arrow">View on GitHub →</span>
                 </div>
               </div>
@@ -137,7 +139,7 @@
           </div>
 
           <div class="cs-callout warm" style="margin-top: 32px;">
-            <p>Coming soon: the IR Planner and Tabletop Exercise agentic architecture from the <a href="incident360.html">Incident360</a> design work, published as concept documentation showing the agent-per-section design, grounding strategy, and human-in-the-loop controls.</p>
+            <p>Coming soon. The IR Planner and Tabletop Exercise agentic architecture from the <a href="incident360.html">Incident360</a> design work, published as concept documentation showing the agent-per-section design, grounding strategy, and human-in-the-loop controls.</p>
           </div>
 
           <h2>What I learned</h2>

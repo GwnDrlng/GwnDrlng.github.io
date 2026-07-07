@@ -482,6 +482,11 @@ nav .container {
   align-items: start;
 }
 @media (max-width: 860px) { .cs-body { grid-template-columns: 1fr; } .cs-sidebar { order: -1; } }
+@media (max-width: 860px) {
+  /* Single-column layouts must scroll as one flow: sticky sidebars overlap the text otherwise */
+  .cs-sidebar { position: static; }
+  .about-grid aside > div { position: static !important; }
+}
 
 .cs-content h2 {
   font-family: var(--font-display);
