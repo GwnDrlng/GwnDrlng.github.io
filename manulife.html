@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Manulife Digital Enrolment — Gwen Darling</title>
-  <meta name="description" content="How I launched Canada's first web-based Group Retirement enrolment platform at Manulife, coordinating 5 delivery teams across front-end to data governance.">
+  <title>Manulife Digital Enrolment · Gwen Darling</title>
+  <meta name="description" content="Canada's first web-based Group Retirement enrolment platform, launched at Manulife across five delivery teams from front-end UI to data governance.">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
 </head>
@@ -12,7 +12,7 @@
 
 <nav>
   <div class="container">
-    <a href="/" class="nav-logo">Gwen Darling</a>
+    <a href="index.html" class="nav-logo">Gwen Darling</a>
     <div class="nav-links">
       <a href="work.html">Work</a>
       <a href="thinking.html">Thinking</a>
@@ -67,39 +67,42 @@
         <article class="cs-content">
 
           <h2>The context</h2>
-          <p>In 2015, Manulife's Group Retirement enrolment was largely paper-based or ran through systems that hadn't been designed for how plan members actually lived and worked. A new employee joining a company retirement plan needed to navigate materials, fill out forms, and make investment decisions — often with no guidance, no mobile support, and no clear path from "I received the plan package" to "I'm enrolled and invested."</p>
-          <p>The business case was clear: a digital, mobile-responsive enrolment experience would reduce administrative friction for plan administrators, reduce call centre load for Manulife, and — most importantly — improve enrolment rates and retirement contribution outcomes for members.</p>
+          <p>Paper enrolment was confusing, and the help mostly ended after one meeting with the plan's advisor. A new employee joining a company retirement plan had to navigate materials, fill out forms, and make investment decisions with no guidance, no mobile support, and no clear path from "I received the plan package" to "I'm enrolled and invested." Many never contributed at all.</p>
+          <p>The business case was clear. A digital, mobile-responsive enrolment experience would reduce administrative friction for plan administrators, reduce call centre load for Manulife, and, most importantly, improve enrolment rates and retirement contribution outcomes for members.</p>
 
           <h2>The complexity</h2>
-          <p>This wasn't a startup building an MVP. It was an enterprise financial services transformation under real constraints:</p>
+          <p>This was an enterprise financial services transformation under real constraints, a long way from a startup MVP:</p>
           <ul>
-            <li><strong>Regulatory:</strong> AODA compliance was non-negotiable — every surface had to meet accessibility standards. Canadian financial services data governance governed what we could store, transmit, and display.</li>
-            <li><strong>Security:</strong> Account takeover prevention was a first-class requirement. Plan members' retirement assets were on the other side of that login screen.</li>
-            <li><strong>Organizational:</strong> Five dispersed delivery teams — front-end UI through back-end data governance — in a SAFe Agile Enterprise environment. Alignment across that many teams, with differing sprint rhythms and backlogs, required constant negotiation and sequencing discipline.</li>
+            <li><strong>Regulatory:</strong> AODA compliance was non-negotiable. Every surface had to meet accessibility standards, and Canadian financial services data governance governed what we could store, transmit, and display.</li>
+            <li><strong>Security:</strong> Account takeover prevention was a first-class requirement. Plan members' retirement assets sat on the other side of that login screen.</li>
+            <li><strong>Organizational:</strong> Five dispersed delivery teams spanned front-end UI through back-end data governance in a SAFe Agile enterprise environment. Alignment across that many teams, each with its own sprint rhythm and backlog, required constant negotiation and sequencing discipline.</li>
             <li><strong>Stakeholder:</strong> Sales, Operations, Investment Product, Marketing, plan Advisors, plan Consultants, and Executives all had skin in the outcome and different definitions of success.</li>
           </ul>
 
-          <h2>What I built</h2>
+          <h2>What the work looked like</h2>
+
+          <h3>Personas that made decisions</h3>
+          <p>We built personas from our own research combined with Manulife's Canadian research, and they earned their keep as a decision tool. When a design or prioritization question came up, the team could recall exactly who the feature was for and why a choice should go in that member's favour, every time. The personas kept a five-team program pointed at the same human being.</p>
 
           <h3>Canada's first digital Group Retirement enrolment platform</h3>
-          <p>The enrolment platform launched as Manulife's first fully web-based, mobile-responsive Group Retirement savings enrolment experience for plan members. From any device, a new member could enrol, select investment options, and complete contribution setup without a paper form or a phone call.</p>
+          <p>The platform launched as Manulife's first fully web-based, mobile-responsive Group Retirement enrolment experience. From any device, a new member could enrol, select investment options, and complete contribution setup without a paper form or a phone call.</p>
 
           <div class="cs-callout warm">
-            <p>Manulife's Group Retirement plan members can now enrol, make investment choices, and set up contributions entirely through a responsive web experience — from any device, at any time.</p>
+            <p>Manulife's Group Retirement plan members can now enrol, make investment choices, and set up contributions entirely through a responsive web experience, from any device, at any time.</p>
             <span class="source">
               <a href="https://docs.google.com/presentation/d/1Lthki00DD4nesccRn-UNJCVUw41BMC0ebnFJ-ZRoRc0/edit?usp=sharing" target="_blank" rel="noopener">View enrolment flow documentation →</a>
             </span>
           </div>
 
           <h3>Dual-vendor AODA investment fund site</h3>
-          <p>A significant workstream was leading the creation of a dual-vendor AODA-compliant investment fund site — the reference point plan members and advisors use to review fund performance, descriptions, and positioning. The dual-vendor approach reduced costs by $2M+ annually while meeting accessibility requirements that the previous implementation didn't satisfy.</p>
+          <p>A significant workstream was leading the creation of a dual-vendor, AODA-compliant investment fund site, the reference point plan members and advisors use to review fund performance, descriptions, and positioning. The dual-vendor approach reduced costs by $2M+ annually while meeting accessibility requirements the previous implementation did not satisfy.</p>
 
           <h3>ATO prevention and IAM</h3>
-          <p>Account takeover prevention was shaped at the product level — defining how Identity and Access Management standards would integrate with the web enrolment experience, across all Manulife business segments. In group retirement, IAM isn't just a security feature: it's the gate between a member's identity and their retirement savings. Getting that architecture right mattered.</p>
+          <p>Account takeover prevention was shaped at the product level, defining how Identity and Access Management standards would integrate with the web enrolment experience across all Manulife business segments. In group retirement, IAM is the gate between a member's identity and their retirement savings. Getting that architecture right mattered.</p>
 
           <h3>Behavioural economics in the enrolment UX</h3>
-          <p>The most interesting design work was applying behavioural economics principles to the contribution and investment selection flows. Plan members face a set of decisions during enrolment — how much to contribute, which funds to allocate to — that most of them aren't equipped to make with confidence. The default choices, the framing of options, the order of decisions, and the use of comparisons all influence outcomes significantly.</p>
-          <p>I applied persona-driven UX hypothesis testing — building hypotheses about which nudges, defaults, and framing approaches would improve enrolment completion rates, contribution levels, and investment diversification. Results informed both the product UX and future engagement campaigns.</p>
+          <p>The most interesting design work applied behavioural economics to the contribution and investment selection flows. Plan members face decisions during enrolment, how much to contribute and which funds to allocate to, that most are not equipped to make with confidence. Default choices, option framing, decision order, and comparisons all influence outcomes significantly.</p>
+          <p>Persona-driven UX hypothesis testing gave the work rigour. We built hypotheses about which nudges, defaults, and framing approaches would improve enrolment completion, contribution levels, and investment diversification, then let results inform both the product UX and future engagement campaigns.</p>
 
           <h2>What happened</h2>
 
@@ -123,9 +126,9 @@
           </div>
 
           <h2>What I learned</h2>
-          <p>Enterprise-scale product work at Manulife taught me two things I've carried to every role since.</p>
-          <p>First: <strong>SAFe at scale is a stakeholder management problem masquerading as an Agile problem.</strong> Five teams can share a program increment and still be working toward different goals if the product vision isn't communicated clearly and repeatedly. The most valuable thing I did in those 5+ years wasn't writing the best user stories — it was making sure every team understood why their piece mattered and how it connected to what the plan member would experience.</p>
-          <p>Second: <strong>financial product UX is never just UX.</strong> The decisions a plan member makes during enrolment — contribution rate, fund allocation, beneficiary designation — have 30-year consequences. Taking that seriously means applying real research, real hypothesis testing, and real iteration to the moments that matter most. Behavioural economics gave us a framework for doing that rigorously instead of just intuitively.</p>
+          <p>Enterprise-scale product work at Manulife taught me two things I have carried to every role since.</p>
+          <p>First: <strong>SAFe at scale is a stakeholder management problem masquerading as an Agile problem.</strong> Five teams can share a program increment and still work toward different goals if the product vision is not communicated clearly and repeatedly. The most valuable thing I did in those five-plus years was making sure every team understood why their piece mattered and how it connected to what the plan member would experience.</p>
+          <p>Second: <strong>financial product UX is never just UX.</strong> The decisions a plan member makes during enrolment, contribution rate, fund allocation, beneficiary designation, carry 30-year consequences. Taking that seriously means applying real research, real hypothesis testing, and real iteration to the moments that matter most. Behavioural economics gave us a framework for doing that rigorously instead of intuitively.</p>
 
         </article>
 
@@ -136,10 +139,10 @@
               <li>SAFe Agile enterprise delivery</li>
               <li>1–3 year roadmap ownership</li>
               <li>Multi-team alignment (5 dispersed teams)</li>
+              <li>Persona-driven decision making</li>
               <li>AODA compliance product design</li>
               <li>IAM and ATO prevention architecture</li>
               <li>Behavioural economics applied to UX</li>
-              <li>Canadian financial data governance</li>
               <li>Executive and advisor stakeholder management</li>
             </ul>
           </div>
@@ -164,8 +167,8 @@
   <section style="border-top: 1px solid var(--border); padding: 48px 0;">
     <div class="container">
       <p class="text-dim" style="font-size: 0.82rem; margin-bottom: 8px;">NEXT CASE STUDY</p>
-      <a href="ai-strategy.html" style="font-family: var(--font-display); font-size: 1.3rem; font-weight: 600; color: var(--text-bright); letter-spacing: -0.02em;">
-        AI Adoption at Arctic Wolf: Shipping It, Not Just Talking About It →
+      <a href="ai-operations.html" style="font-family: var(--font-display); font-size: 1.3rem; font-weight: 600; color: var(--text-bright); letter-spacing: -0.02em;">
+        AI Operations: Running a Product Practice on AI →
       </a>
     </div>
   </section>
@@ -175,9 +178,10 @@
 <footer>
   <div class="container">
     <div class="footer-inner">
-      <span class="footer-copy">Gwen Darling — Product Management Leader · B2B SaaS · GTA, Canada</span>
+      <span class="footer-copy">Gwen Darling · Product Management Leader · B2B SaaS · GTA, Canada</span>
       <div class="footer-links">
         <a href="https://www.linkedin.com/in/gwendarling" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/GwnDrlng" target="_blank" rel="noopener">GitHub</a>
         <a href="work.html">Work</a>
         <a href="about.html">About</a>
       </div>

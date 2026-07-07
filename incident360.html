@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Incident360 — Gwen Darling</title>
-  <meta name="description" content="How I transformed Arctic Wolf's Incident Response from a transactional service into a tiered recurring product line — and hit 200%+ of year-one ARR projections.">
+  <title>Incident360 · Gwen Darling</title>
+  <meta name="description" content="How Arctic Wolf's Incident Response became a recurring product line. An assurance-based retainer no one in the industry had tried, priced on real case data, and validated by IDC.">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
 </head>
@@ -12,7 +12,7 @@
 
 <nav>
   <div class="container">
-    <a href="/" class="nav-logo">Gwen Darling</a>
+    <a href="index.html" class="nav-logo">Gwen Darling</a>
     <div class="nav-links">
       <a href="work.html">Work</a>
       <a href="thinking.html">Thinking</a>
@@ -34,8 +34,8 @@
         <span>/</span>
         <span>Incident360</span>
       </div>
-      <h1>Turning Incident Response Into a Recurring Product Line</h1>
-      <p class="lead">Arctic Wolf had a transactional incident response offering that customers bought after a breach. I replaced it with a tiered retainer family designed to be activated before one ever happens — and shipped it without a dedicated dev team for 18 months.</p>
+      <h1>Incident Response as a Recurring Product Line</h1>
+      <p class="lead">Arctic Wolf sold incident response the way the whole industry did: transactionally, after a breach, in billable hours. Incident360 replaced that with an assurance-based retainer family anchored on coverage. One incident per year, fully covered, regardless of type. The model opened IR to the mid-market and SMB organizations historically priced out of meaningful coverage, and it shipped through borrowed engineering capacity for 18 months.</p>
       <div class="cs-meta">
         <div class="cs-meta-item">
           <span class="label">Company</span>
@@ -67,45 +67,63 @@
         <article class="cs-content">
 
           <h2>The bet</h2>
-          <p>The cybersecurity market was selling incident response as a break-glass service: a company gets breached, they call someone, a team shows up. The model was reactive by design, which meant every engagement started from zero — no relationship, no pre-loaded context, no trust built before the crisis.</p>
-          <p>The hypothesis was that if you could shift a customer's relationship with IR from transactional to retainer — a standing commitment with pre-built runbooks, readiness touchpoints, and a proactive services track — you'd change the economics for both sides. Customers would be better prepared. Arctic Wolf would have predictable, recurring revenue in a market that had none.</p>
-          <p>That bet was non-obvious for one reason: <strong>the market didn't exist yet.</strong> Nobody had productized IR at scale. The question wasn't "can we build it?" — it was "will customers pay for it before they need it?"</p>
+          <p>Assurance was the bet. Every IR retainer on the market ran on prepaid hours that burned down during an incident, and every executive in the room knew that model worked. The VP of IR had built the traditional hourly retainer at a previous company and felt strongly about repeating a model the market already understood. Finance wanted the certainty of a structure with existing benchmark data.</p>
+          <p>The hourly model had one problem no one could argue away. It priced out the SMB and Commercial customers who made up Arctic Wolf's core ICP. A mid-market company facing ransomware needs full coverage, and a burn-down clock is the last thing they can plan a budget around. Coverage was the product those customers could buy. Hours were the product the industry knew how to sell.</p>
+          <p>The case that carried the room was financial. I built the pricing and risk model myself, using thousands of historical cases to predict incident probability by industry, customer size, and case type when customers were covered by MDR. That model gave Finance a way to underwrite a product with no sales history anywhere in the industry. Finance pushed pricing higher to hold margin against the risk, and the model absorbed it. We traded the certainty of the hourly retainer for a product that did not exist anywhere yet.</p>
 
           <div class="cs-callout warm">
             <p>"Why Didn't Anyone Think of This Before?"</p>
-            <span class="source">IDC Market Note, July 2025 — on the Incident360 Retainer family</span>
+            <span class="source">IDC Market Note, July 2025, on the Incident360 Retainer family</span>
           </div>
 
+          <h2>The discovery approach</h2>
+          <p>Discovery ran as a continuous research channel with three layers.</p>
+          <p><strong>Desk and competitive research</strong> established where the category gaps sat. <strong>Partner and customer interviews</strong> tested whether partners would carry the offering and build services around it. Structured interviews continued across the first 20 Tabletop Exercise deliveries, putting research inside the moment of use with customers who had real stakes in the outcome.</p>
+          <p><strong>CSAT at every services close</strong> went past satisfaction scores. It showed which parts of pre-breach preparation landed, where friction appeared, and where design intent diverged from customer expectation.</p>
+          <p><strong>Cohort analysis in Tableau</strong> revealed willingness-to-pay signals. The research identified three distinct buyer segments for IR planning: customers checking a box for cyber insurance, growing companies adopting governance practices for the first time, and mature organizations whose plans were complicated enough to shape the future roadmap.</p>
+
           <h2>The constraint</h2>
-          <p>The hardest part wasn't the product. It was building it without dedicated engineering capacity.</p>
-          <p>For the first 18 months, Incident360 was developed entirely through borrowed capacity — teams with competing roadmap priorities, no dedicated sprint, no dedicated PM-Engineering pod. That meant three things had to be true for the product to ship:</p>
+          <p>The product shipped without dedicated engineering capacity for its first 18 months. Every build ran through partner teams with competing roadmap priorities, no dedicated sprint, and no dedicated PM-Engineering pod. Three disciplines made that work:</p>
           <ul>
-            <li><strong>Ruthless sequencing.</strong> Every decision to build something meant a decision to not build something else. I established governance frameworks that gave cross-functional teams a shared decision-making language, which turned into faster yes/no cycles and fewer priority wars.</li>
-            <li><strong>Internal customers first.</strong> The IR Services team was the product's first internal customer. I applied the same research, scoping, and instrumentation rigor to their operational workflows as to customer-facing surfaces. Trust from that team was the reason I could keep borrowing capacity.</li>
-            <li><strong>Short feedback loops.</strong> I structured individual interviews across the first 20 Tabletop Exercise deliveries and CSAT collection on all services closes — turning live service delivery into a continuous product research channel.</li>
+            <li><strong>Ruthless sequencing.</strong> Every decision to build something was a decision to skip something else. Governance frameworks gave cross-functional teams a shared decision-making language, which produced faster yes/no cycles and fewer priority wars.</li>
+            <li><strong>Internal customers first.</strong> The IR Services team was the product's first internal customer. Their operational workflows got the same research, scoping, and instrumentation rigor as customer-facing surfaces. Trust from that team was the reason the borrowed capacity kept flowing.</li>
+            <li><strong>Short feedback loops.</strong> Live service delivery became a continuous product research channel, instrumented into the work itself rather than run as a parallel program.</li>
           </ul>
 
-          <h2>What I built</h2>
-          <p>The Incident360 family launched as three tiers: <strong>JumpStart, Incident360, and Incident360 Plus</strong> — designed to serve different customer profiles along a readiness spectrum, from "we know we need IR coverage" to "we want full retainer depth with proactive services and threat intel."</p>
+          <h2>What shipped</h2>
+          <p>The Incident360 family launched as three tiers, <strong>JumpStart, Incident360, and Incident360 Plus</strong>, serving customer profiles along a readiness spectrum: from "we know we need IR coverage" to "we want full retainer depth with proactive services and threat intel."</p>
 
           <figure class="cs-image">
             <img src="images/incident360-portal.png" alt="Incident360 Retainer dashboard in the Arctic Wolf Unified Portal, showing IR planner status, retainer options, readiness touchpoints, and runbooks" loading="lazy">
-            <figcaption>The Incident Response overview in Arctic Wolf's Unified Portal — showing the IR Planner readiness tracker, tier comparison, runbook downloads, and breach escalation pathway. Built to surface readiness gaps before a customer needs it.</figcaption>
+            <figcaption>The Incident Response overview in Arctic Wolf's Unified Portal, showing the IR Planner readiness tracker, tier comparison, runbook downloads, and breach escalation pathway. Built to reveal readiness gaps before a customer needs it.</figcaption>
           </figure>
 
-          <p>The portal experience was designed to work on two timelines at once:</p>
+          <p>The portal experience works on two timelines at once:</p>
           <ul>
-            <li><strong>Pre-breach:</strong> IR Plan completion, readiness touchpoints, proactive service scheduling, and threat intel digests all visible from a single pane. Customers could see their own preparedness gap.</li>
-            <li><strong>In-breach:</strong> A single "Report a Breach" escalation button surfaced at the top of the IR dashboard — zero friction from portal to response team engagement.</li>
+            <li><strong>Pre-breach:</strong> IR Plan completion, readiness touchpoints, proactive service scheduling, and threat intel digests visible from a single pane. Customers can see their own preparedness gap.</li>
+            <li><strong>In-breach:</strong> A single "Report a Breach" escalation button at the top of the IR dashboard. Zero friction between the portal and the response team. While waiting for the IR team, the portal walks the customer through immediate steps and tracks the actions some cyber incidents legally require for governance.</li>
           </ul>
 
           <h3>Activation architecture</h3>
-          <p>One of the most important discoveries came from comparing bundled vs. standalone retainer customers early in the launch. The two cohorts had divergent activation patterns — standalone customers were not following the same onboarding path as bundled ones, and the gap was showing up in engagement metrics.</p>
-          <p>I tracked both cohorts in Tableau, then designed and shipped a standalone-specific onboarding track: rebuilt welcome email sequence, added a portal orientation call covering emergency and proactive services, and integrated with a concurrent marketing campaign to maintain a consistent first impression across every channel.</p>
-          <p>Longer term, I defined activation milestones across the full Incident360 lifecycle (first portal login, contacts added, IR Plan completion, proactive service request submitted) and surfaced all signals in Planhat with triggered lifecycle messaging — giving CS, Sales, and IR Services direct access to product engagement data within their own workflows, with no routing through product.</p>
+          <p>Bundled and standalone customers activated differently, and the Tableau cohort data made the divergence visible early. Standalone buyers were a segment the original pricing model had forecast zero sales for. They bought anyway, with no other Arctic Wolf subscription and no platform familiarity, which meant the bundled onboarding path left them stranded.</p>
+          <p>The response was a standalone-specific onboarding track: a rebuilt welcome email sequence, a portal orientation call covering emergency and proactive services, and integration with a live marketing campaign so users and buyers got a consistent first impression across every channel. Pricing learned too. Custom-level pricing keyed on endpoint count (3,500+ endpoints), and at the six-month mark we added a final pricing level reaching the largest ICP we were willing to serve, keeping conversion goals honest for a business that does not sell to large enterprise.</p>
+          <p>Activation milestones spanned the full lifecycle: first portal login, contacts added, IR Plan engagement, and proactive service request submitted. Every signal fed Planhat with triggered lifecycle messaging that kept a personal CSM tone at scale, giving CS, Sales, and IR Services direct access to product engagement data inside their own workflows.</p>
+
+          <h3>When success became the risk</h3>
+          <p>The product sold past its projections, and demand became the thing to manage. Annual subscriptions meant proactive service requests could arrive in waves as renewal dates rolled over, so the tabletop and services capacity model was rebuilt and watched closely. The organization ran renewal-benefit campaigns, gave CSMs quarterly talk tracks, and used the activation metrics to flag at-risk customers for IR Services, CS, and marketing to action. A case-management dashboard was prototyped so the IR team could monitor those signals daily.</p>
 
           <h3>Go-to-market: MSP, reseller, and insurance</h3>
-          <p>Incident360 wasn't designed to sell only direct. I built the MSP, reseller, and insurance carrier go-to-market tracks — including international expansion with regulatory market fit work — which extended the product's total addressable market beyond what a direct-only motion could reach.</p>
+          <p>Incident360 was designed for more than a direct motion. The MSP, reseller, and insurance carrier tracks, including international expansion with regulatory market-fit work, extended the addressable market past what direct sales alone could reach.</p>
+
+          <h2>Designing the next generation: IR Planner and Tabletop on the agentic layer</h2>
+          <p>The IR Planner was a staple of every retainer tier, and its next generation was mine to design. I wrote the PRD drafts and planned the architecture from customer interviews and jobs-to-be-done research across the three buyer segments discovery had identified.</p>
+          <p>The design uses Arctic Wolf's existing swarm of agents, grounded in the customer environment data already gathered by the MDR and EDR products. Each section of the IR Plan gets its own specialist agent, because each section is specific enough to need one, with deterministic data fed in directly wherever it exists. The generated plan follows the NIST framework, accounts for a communication tree, and attaches known dollar exposure to unpatched, exploitable systems.</p>
+          <p>The onboarding experience walks the customer through a prepopulated plan section by section as an "is this right?" confirmation flow. Customers without MDR/EDR coverage get a scan of their internet-facing surface and external vulnerabilities as the starting point instead. A section-scoped LLM chat sits alongside each step, answering questions about that section only and teaching customers how to fill it out, which many SMB customers had never done before. Every input requires human approval and confirmation, because the severity and legality of IR planning leaves no room for unreviewed generation.</p>
+          <p>The Tabletop Exercise design draws on the same customer data through MCP integrations, plus the attack surface and current threat landscape for the customer's industry and technology stack. From a set of templates and themes, the system generates a storytelling-driven exercise with dynamic next steps that respond to how the customer's team reacts to the scenario. The IR facilitator stays in the loop throughout, adjusting content, length, and nuance before and during delivery. Security, governance, and compliance requirements are wrapped into both systems by design.</p>
+
+          <div class="cs-callout">
+            <p>The IR Planner and Tabletop agentic systems exist as PRDs, planned architecture, and working prototypes. They describe design work, and any imagery or experience shown for them is concept material rather than shipped product.</p>
+          </div>
 
           <h2>What happened</h2>
 
@@ -119,20 +137,21 @@
               <div class="outcome-label">Gross margins</div>
             </div>
             <div class="outcome-card">
-              <div class="outcome-value">67%+</div>
-              <div class="outcome-label">Product CAGR after transactional-to-recurring transformation</div>
+              <div class="outcome-value">2x</div>
+              <div class="outcome-label">Full retainer product family ARR doubled in one year</div>
             </div>
             <div class="outcome-card">
               <div class="outcome-value">IDC</div>
-              <div class="outcome-label">Market Note validation — "Why Didn't Anyone Think of This Before?"</div>
+              <div class="outcome-label">Market Note validation: "Why Didn't Anyone Think of This Before?"</div>
             </div>
           </div>
 
-          <p>The product was recognized with the <strong>Wolf on the Hill Innovation Award</strong> — Arctic Wolf's award for creating a successful, innovative, and differentiated product in the cybersecurity market.</p>
+          <p>Incident Response now runs as a recurring product line rather than a transactional service, with 67%+ product CAGR and Gartner Market Guide inclusion two years running. The product earned the <strong>Wolf on the Hill Innovation Award</strong>, Arctic Wolf's award for creating a successful, innovative, and differentiated product in the cybersecurity market.</p>
 
           <h2>What I learned</h2>
-          <p>The biggest insight from Incident360 wasn't a product insight — it was an organizational one. <strong>Building cross-functional trust is a prerequisite for building good product without headcount.</strong> The 18 months without a dedicated dev team worked because the IR Services team, engineering leads, and GTM teams all had skin in the outcome. They weren't helping because I asked them to — they were helping because they believed in where it was going.</p>
-          <p>The second thing: activation is not the same as onboarding. Getting customers into the product is a logistics problem. Getting them to experience value before they need it is a product problem. Those require completely different instrumentation, different messaging, and different ownership across CS and product.</p>
+          <p>The biggest insight was organizational. <strong>Cross-functional trust is the prerequisite for building good product without headcount.</strong> The 18 months of borrowed capacity worked because the IR Services team, engineering leads, and GTM teams all had skin in the outcome. They helped because they believed in where the line was going.</p>
+          <p>The second insight: activation and onboarding are different problems. Getting customers into the product is a logistics problem. Getting them to experience value before they need it is a product problem. Those require different instrumentation, different messaging, and different ownership across CS and product.</p>
+          <p>The third: a launch can succeed its way into a new risk. Demand planning, renewal-cliff management, and capacity modeling deserve the same design attention as the product itself.</p>
 
         </article>
 
@@ -140,14 +159,14 @@
           <div class="sidebar-card">
             <h4>Skills demonstrated</h4>
             <ul>
-              <li>P&amp;L ownership</li>
+              <li>P&amp;L ownership and financial modeling</li>
               <li>Product line architecture (tiered SaaS)</li>
-              <li>Transactional → recurring revenue transformation</li>
-              <li>Activation design + cohort instrumentation</li>
+              <li>Transactional to recurring revenue</li>
+              <li>Agentic AI system design (human-in-the-loop)</li>
+              <li>Activation design and cohort instrumentation</li>
               <li>Multi-channel GTM (MSP, reseller, insurance)</li>
               <li>Cross-functional leadership without authority</li>
-              <li>International market expansion</li>
-              <li>Compliance framework embedding (NIST, HIPAA, SOC 2)</li>
+              <li>Compliance embedding (NIST, HIPAA, SOC 2)</li>
             </ul>
           </div>
           <div class="sidebar-card">
@@ -155,6 +174,7 @@
             <ul>
               <li>Tableau (cohort analysis)</li>
               <li>Planhat (lifecycle signals)</li>
+              <li>MCP-integrated agent architecture</li>
               <li>CSAT (services feedback loop)</li>
               <li>Structured user interviews</li>
               <li>SAFe / Dual-Track Agile</li>
@@ -164,7 +184,7 @@
             <span>📄</span> Incident360 Data Sheet
           </a>
           <a href="downloads/IDC-Arctic-Wolf-IR-Retainer-2025.pdf" class="sidebar-download" target="_blank">
-            <span>📄</span> IDC Market Note — July 2025
+            <span>📄</span> IDC Market Note, July 2025
           </a>
           <a href="https://arcticwolf.com/solutions/incident-response-retainer/" class="sidebar-download" target="_blank" rel="noopener">
             <span>↗</span> View at Arctic Wolf
@@ -180,7 +200,7 @@
     <div class="container">
       <p class="text-dim" style="font-size: 0.82rem; margin-bottom: 8px;">NEXT CASE STUDY</p>
       <a href="outrider.html" style="font-family: var(--font-display); font-size: 1.3rem; font-weight: 600; color: var(--text-bright); letter-spacing: -0.02em;">
-        Outrider: From Weeks to Minutes — and Knowing When to Stop →
+        Outrider and AXIOM: Weeks to Minutes, and Knowing When to Stop →
       </a>
     </div>
   </section>
@@ -190,9 +210,10 @@
 <footer>
   <div class="container">
     <div class="footer-inner">
-      <span class="footer-copy">Gwen Darling — Product Management Leader · B2B SaaS · GTA, Canada</span>
+      <span class="footer-copy">Gwen Darling · Product Management Leader · B2B SaaS · GTA, Canada</span>
       <div class="footer-links">
         <a href="https://www.linkedin.com/in/gwendarling" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/GwnDrlng" target="_blank" rel="noopener">GitHub</a>
         <a href="work.html">Work</a>
         <a href="about.html">About</a>
       </div>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Operations · Gwen Darling</title>
+  <meta name="description" content="How Gwen Darling runs a product practice on AI: agentic systems for research, competitive analysis, and PRD workflows, with open-source systems on GitHub.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+</head>
+<body>
+
+<nav>
+  <div class="container">
+    <a href="index.html" class="nav-logo">Gwen Darling</a>
+    <div class="nav-links">
+      <a href="work.html">Work</a>
+      <a href="thinking.html">Thinking</a>
+      <a href="about.html">About</a>
+      <a href="https://www.linkedin.com/in/gwendarling" target="_blank" rel="noopener" class="nav-cta">Get in touch</a>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<main>
+
+  <div class="cs-hero">
+    <div class="container">
+      <div class="cs-breadcrumb">
+        <a href="work.html">← Work</a>
+        <span>/</span>
+        <span>AI Operations</span>
+      </div>
+      <h1>Running a Product Practice on AI</h1>
+      <p class="lead">My product practice runs on agentic systems I design and build myself. The same systems ran inside Arctic Wolf's product organization, where I led AI adoption for PMs and designers, and several now live in the open on GitHub where anyone can read the architecture. AI earns its place in my work the same way it earns a place in a product: by closing a real gap, bounded by what a person can stand behind.</p>
+      <div class="cs-meta">
+        <div class="cs-meta-item">
+          <span class="label">Context</span>
+          <span class="value">Arctic Wolf · Open Source</span>
+        </div>
+        <div class="cs-divider"></div>
+        <div class="cs-meta-item">
+          <span class="label">Role</span>
+          <span class="value">Builder · Internal AI Adoption Lead</span>
+        </div>
+        <div class="cs-divider"></div>
+        <div class="cs-meta-item">
+          <span class="label">Timeline</span>
+          <span class="value">2024 – Present</span>
+        </div>
+        <div class="cs-divider"></div>
+        <div class="cs-meta-item">
+          <span class="label">Domain</span>
+          <span class="value">Agentic Systems · Enablement · Evals</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+      <div class="cs-body">
+
+        <article class="cs-content">
+
+          <h2>The operating stack</h2>
+          <p>Four capabilities carry most of my product work.</p>
+
+          <h3>Claude Code CLI and Copilot in VS Code</h3>
+          <p>This is the primary workflow: competitive analysis, PRD drafting, research synthesis, and documentation. At Arctic Wolf I built and ran a competitive analysis agent producing structured intelligence, positioning gaps, GTM overlaps, and response vectors, in a format that went directly into strategic planning decks and exec briefings. It compressed a week-long competitive research cycle into hours.</p>
+
+          <h3>LLM-as-judge discovery workflows</h3>
+          <p>AI runs through my discovery process end to end. Discussion guides get pressure-tested before fieldwork, question sets build from the tested plan, responses get evaluated against clear rubrics with evals and LLM-as-judge scoring, and transcripts get normalized for structured analysis. Discovery becomes repeatable instead of dependent on memory and note quality.</p>
+
+          <h3>Template-driven PRD workflows</h3>
+          <p>Opinionated PRD templates with built-in prompts force the hard questions early: job-to-be-done, customer segment, success metric, known unknowns, and build-vs-buy framing. First-draft time dropped by roughly 60 to 70 percent, and the early-stage thinking improved because the hard questions became visible before anyone started writing solutions.</p>
+
+          <h3>M365 Copilot as the accessible baseline</h3>
+          <p>Meeting summaries, communication drafts, and research starting points. The goal was making AI the default starting point for documentation and communication across the whole team, power users and everyone else alike.</p>
+
+          <h2>Enabling an organization, treated as a product problem</h2>
+          <p>The behaviorally hardest part was enabling PMs and designers, people with no prior reason to open a code editor, onto VS Code, Claude Code, and Copilot. The program treated adoption as a product problem with a value proposition, a planned learning curve, and friction removed before the change was asked for: clear onboarding, relevant use cases, a quick win in the first session, and a follow-up loop to catch where people got stuck.</p>
+
+          <div class="cs-callout">
+            <p>The biggest barrier to internal AI adoption is giving people a reason to change how they work when what they currently do works fine. "Here's what AI can do" is a demo. "Here's how you would have solved that problem you mentioned last week, in under five minutes" is adoption.</p>
+          </div>
+
+          <p>The teams that got most productive had the fewest training hours. They had a clear first use case, reached a working result fast, and built habit from there. That is activation design, and it works the same way internally as it does for customers.</p>
+
+          <h2>In the open: systems you can read</h2>
+          <p>Several of my working systems live publicly on GitHub. Some rebuild, in the open, patterns I first created inside Arctic Wolf, where the originals remain.</p>
+
+          <div class="cards-grid" style="margin-top: 32px;">
+            <a href="https://github.com/GwnDrlng/research-engine" target="_blank" rel="noopener" style="display:block; color:inherit; text-decoration:none;">
+              <div class="card">
+                <div class="card-body">
+                  <div class="card-tag">Research · Evals</div>
+                  <h3>research-engine</h3>
+                  <p>A Claude Code-native framework that makes UX and product research repeatable, governed, and evaluated by a separate LLM-as-judge. The public version of the discovery discipline described above.</p>
+                  <span class="card-arrow">View on GitHub →</span>
+                </div>
+              </div>
+            </a>
+            <a href="https://github.com/GwnDrlng/daily-sentiment-analysis" target="_blank" rel="noopener" style="display:block; color:inherit; text-decoration:none;">
+              <div class="card">
+                <div class="card-body">
+                  <div class="card-tag warm">Intelligence · Agents</div>
+                  <h3>daily-sentiment-analysis</h3>
+                  <p>A daily strategic intelligence agent that filters product and AI noise into a five-minute executive briefing built on signal rather than coverage.</p>
+                  <span class="card-arrow">View on GitHub →</span>
+                </div>
+              </div>
+            </a>
+            <a href="https://github.com/GwnDrlng/career-ops-ca" target="_blank" rel="noopener" style="display:block; color:inherit; text-decoration:none;">
+              <div class="card">
+                <div class="card-body">
+                  <div class="card-tag green">Automation · Canadian Market</div>
+                  <h3>career-ops-ca</h3>
+                  <p>AI-powered, CLI-agnostic career operations automation adapted for Canadian market specifics: ATS behaviour, French-language requirements, and provincial variation. Architecture splits across Vercel for scheduling, on-prem for deterministic and token-intensive work, and Slack for delivery.</p>
+                  <span class="card-arrow">View on GitHub →</span>
+                </div>
+              </div>
+            </a>
+            <a href="https://github.com/GwnDrlng/linkedin-carousel-agent" target="_blank" rel="noopener" style="display:block; color:inherit; text-decoration:none;">
+              <div class="card">
+                <div class="card-body">
+                  <div class="card-tag">Content · Self-evaluation</div>
+                  <h3>linkedin-carousel-agent</h3>
+                  <p>A Claude skill that creates LinkedIn carousels with self-evaluation and auto-retry built in. A small system, and a complete one: generation, judgment, and iteration in a single loop.</p>
+                  <span class="card-arrow">View on GitHub →</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="cs-callout warm" style="margin-top: 32px;">
+            <p>Coming soon: the IR Planner and Tabletop Exercise agentic architecture from the <a href="incident360.html">Incident360</a> design work, published as concept documentation showing the agent-per-section design, grounding strategy, and human-in-the-loop controls.</p>
+          </div>
+
+          <h2>What I learned</h2>
+          <p><strong>Internal tooling deserves the same product rigor as customer-facing work.</strong> Value proposition, activation design, instrumentation, iteration. Skipping any of them shows up the same way it does with customers: quiet abandonment.</p>
+          <p>Building these systems myself changed how I lead AI product work. The roadmap conversations, the eval discipline, and the build-vs-buy calls all get sharper when the PM in the room has shipped agents with their own hands.</p>
+
+        </article>
+
+        <aside class="cs-sidebar">
+          <div class="sidebar-card">
+            <h4>Skills demonstrated</h4>
+            <ul>
+              <li>Agentic system design and builds</li>
+              <li>Eval design and LLM-as-judge</li>
+              <li>Internal AI strategy and enablement</li>
+              <li>Adoption treated as activation design</li>
+              <li>Competitive intelligence systemization</li>
+              <li>Open-source publishing</li>
+            </ul>
+          </div>
+          <div class="sidebar-card">
+            <h4>Tools</h4>
+            <ul>
+              <li>Claude Code CLI</li>
+              <li>Copilot in VS Code</li>
+              <li>M365 Copilot</li>
+              <li>MCP integrations</li>
+              <li>Vercel · Slack delivery layers</li>
+            </ul>
+          </div>
+          <a href="https://github.com/GwnDrlng" class="sidebar-download" target="_blank" rel="noopener">
+            <span>↗</span> github.com/GwnDrlng
+          </a>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <section style="border-top: 1px solid var(--border); padding: 48px 0;">
+    <div class="container">
+      <p class="text-dim" style="font-size: 0.82rem; margin-bottom: 8px;">EXPLORE</p>
+      <a href="thinking.html" style="font-family: var(--font-display); font-size: 1.3rem; font-weight: 600; color: var(--text-bright); letter-spacing: -0.02em;">
+        How I think: frameworks from real product decisions →
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <span class="footer-copy">Gwen Darling · Product Management Leader · B2B SaaS · GTA, Canada</span>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/gwendarling" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/GwnDrlng" target="_blank" rel="noopener">GitHub</a>
+        <a href="work.html">Work</a>
+        <a href="about.html">About</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
