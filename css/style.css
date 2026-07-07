@@ -4,13 +4,13 @@
 /* Light editorial theme: white surfaces, neutral grays, one blue accent */
 :root {
   --bg:          #FFFFFF;
-  --bg-alt:      #F4ECE6;
+  --bg-alt:      #F7F6F4;
   --beige:       #F4ECE6;
-  --beige-deep:  #E6DACE;
+  --beige-deep:  #E0D5C8;
   --bg-card:     #FFFFFF;
   --bg-card-hover: #FAFAF8;
-  --border:      #E8E2DC;
-  --border-light: #C9C1B8;
+  --border:      #E8E6E6;
+  --border-light: #C7C7C7;
 
   --text:        #3A3A38;
   --text-bright: #000000;
@@ -56,8 +56,8 @@ body::before {
   z-index: -1;
   pointer-events: none;
   background:
-    radial-gradient(1000px 560px at 90% -10%, rgba(0, 80, 255, 0.05), transparent 60%),
-    linear-gradient(160deg, #FDFAF7 0%, #F4ECE6 42%, #EDE2D7 100%);
+    linear-gradient(100deg, rgba(0, 80, 255, 0.14) 0%, rgba(0, 80, 255, 0.06) 28%, rgba(0, 80, 255, 0) 52%),
+    #FFFFFF;
 }
 img { display: block; max-width: 100%; }
 a { color: var(--accent); text-decoration: none; transition: color 0.2s var(--ease); }
@@ -99,11 +99,22 @@ nav .container {
   width: 100%;
 }
 .nav-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
   font-family: var(--font-display);
-  font-size: 1.15rem;
-  font-weight: 600;
+  font-size: 1.25rem;
+  font-weight: 700;
   color: var(--text-bright);
   letter-spacing: 0.01em;
+}
+.nav-logo::before {
+  content: '';
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background: var(--accent);
+  flex-shrink: 0;
 }
 .nav-logo:hover { color: var(--accent); }
 .nav-logo .nav-role {
@@ -128,21 +139,8 @@ nav .container {
   padding: 6px 0;
   transition: color 0.2s var(--ease);
 }
-.nav-links a::before {
-  content: '';
-  position: absolute;
-  top: -4px; left: 0;
-  width: 100%;
-  height: 2px;
-  background: var(--accent);
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.25s var(--ease);
-}
 .nav-links a:hover { color: var(--accent); }
-.nav-links a:hover::before,
-.nav-links a.active::before { transform: scaleX(1); }
-.nav-links a.active { color: var(--text-bright); }
+.nav-links a.active { color: var(--accent); }
 .nav-cta {
   display: inline-flex;
   align-items: center;
